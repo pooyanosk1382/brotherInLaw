@@ -19,6 +19,7 @@ def firstBrotherInLaw():
 
         line1.set("First family meet the second family")
         time.sleep(1)
+    line1.set("First family reach the destination")
 
 
 def secondBrotherInLaw():
@@ -34,6 +35,7 @@ def secondBrotherInLaw():
 
         line2.set("Second family meet the first family")
         time.sleep(1)
+    line2.set("Second family reach the destination")
 
 
 root = tk.Tk()
