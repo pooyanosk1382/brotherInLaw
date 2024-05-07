@@ -9,7 +9,8 @@ def firstBrotherInLaw():
     time.sleep(1)
     for _ in range(4):
         print("First family start going to next toll")
-        time.sleep(2)
+        for i in range(142):
+            time.sleep(0.02)
 
         print("First family reached the toll " + str(_+1))
         barrier.wait()
@@ -23,7 +24,8 @@ def secondBrotherInLaw():
     time.sleep(1)
     for _ in range(4):
         print("Second family start going to next toll")
-        time.sleep(4)
+        for i in range(142):
+            time.sleep(0.04)
 
         print("Second family reached the toll " + str(_+1))
         barrier.wait()

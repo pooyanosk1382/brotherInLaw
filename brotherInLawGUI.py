@@ -11,7 +11,8 @@ def firstBrotherInLaw():
     time.sleep(1)
     for _ in range(4):
         line1.set("First family start going to next toll")
-        time.sleep(2)
+        for i in range(142):
+            time.sleep(0.02)
 
         line1.set("First family reached the toll " + str(_+1))
         time.sleep(1)
@@ -27,7 +28,8 @@ def secondBrotherInLaw():
     time.sleep(1)
     for _ in range(4):
         line2.set("Second family start going to next toll")
-        time.sleep(4)
+        for i in range(142):
+            time.sleep(0.04)
 
         line2.set("Second family reached the toll " + str(_+1))
         time.sleep(1)
