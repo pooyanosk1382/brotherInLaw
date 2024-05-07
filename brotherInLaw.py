@@ -6,6 +6,7 @@ barrier = threading.Barrier(2)
 
 
 def firstBrotherInLaw():
+    print("First family start the trip")
     for _ in range(4):
         # Thread 1 waits for 2 seconds
         print("First family start going to next toll")
@@ -16,10 +17,11 @@ def firstBrotherInLaw():
         barrier.wait()
 
         # Thread 1 continues execution
-        print("They meet the second family")
+        print("First family meet the second family")
 
 
 def secondBrotherInLaw():
+    print("second family start the trip")
     for _ in range(4):
         # Thread 2 waits for 4 seconds
         print("Second family start going to next toll")
@@ -30,7 +32,7 @@ def secondBrotherInLaw():
         barrier.wait()
 
         # Thread 2 continues execution
-        print("They meet the first family")
+        print("Second family meet the first family")
 
 
 # Create and start the threads
