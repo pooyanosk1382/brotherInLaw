@@ -15,6 +15,7 @@ def firstBrotherInLaw():
         barrier.wait()
 
         print("First family meet the second family")
+    print("First family reach the destination")
 
 
 def secondBrotherInLaw():
@@ -28,6 +29,7 @@ def secondBrotherInLaw():
         barrier.wait()
 
         print("Second family meet the first family")
+    print("Second family reach the destination")
 
 
 firstGroom = threading.Thread(target=firstBrotherInLaw)
